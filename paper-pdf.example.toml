@@ -1,0 +1,34 @@
+# Copy this file to a private path such as ~/.config/paper-pdf-download/config.toml
+# or paper-pdf.local.toml. Never commit credentials, cookies, or browser profiles.
+
+[network]
+timeout_seconds = 60
+verify_tls = true
+
+[browser]
+enabled = true
+headless = true
+humanize = true
+auto_update = false
+profile_dir = "~/.paper-pdf-download/profiles"
+# Generic example only. Add routing flags only when your institution requires them.
+# args = ["--no-proxy-server", "--proxy-bypass-list=*"]
+args = []
+navigation_timeout_seconds = 90
+candidate_timeout_seconds = 25
+max_candidate_urls = 12
+settle_seconds = 2.0
+
+[apis]
+# Optional; Unpaywall requires an email identifier for API usage.
+unpaywall_email = ""
+# Store values in environment variables, not in this file.
+elsevier_api_key_env = "ELSEVIER_API_KEY"
+elsevier_inst_token_env = "ELSEVIER_INST_TOKEN"
+
+[conversion]
+mineru_command = "mineru"
+mineru_open_api_command = "mineru-open-api"
+backend = "pipeline"
+language = "ch"
+min_markdown_chars = 100

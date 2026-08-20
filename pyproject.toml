@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-pdf-download-skill"
+version = "0.1.0"
+description = "Silent, verified retrieval of authorized research-paper PDFs with optional MinerU conversion"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "wxt18757928900-lgtm" }]
+keywords = ["research", "pdf", "doi", "academic", "mineru", "agent-skill"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "platformdirs>=4.3",
+  "pypdf>=5.0",
+  "requests>=2.32",
+]
+
+[project.optional-dependencies]
+browser = ["cloakbrowser>=0.5.8"]
+dev = ["build>=1.2", "pytest>=8.3", "ruff>=0.9"]
+
+[project.urls]
+Homepage = "https://github.com/wxt18757928900-lgtm/paper-pdf-download-skill"
+Issues = "https://github.com/wxt18757928900-lgtm/paper-pdf-download-skill/issues"
+
+[project.scripts]
+paper-pdf = "paper_pdf.cli:main"
+paper-pdf-download = "paper_pdf.cli:download_entry"
+paper-pdf-to-markdown = "paper_pdf.cli:convert_entry"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

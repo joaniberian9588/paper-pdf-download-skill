@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper PDF Download"
+  short_description: "Silently retrieve and verify authorized paper PDFs"
+  default_prompt: "Use $paper-pdf-download to batch-download and verify the requested paper PDFs silently."

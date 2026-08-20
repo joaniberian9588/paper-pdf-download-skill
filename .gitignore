@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+
+# Local credentials and institution/network overrides
+.env
+.env.*
+!.env.example
+paper-pdf.local.toml
+config.local.toml
+secrets.toml
+
+# Retrieved papers, conversion output, and browser state
+library/
+runs/
+outputs/
+work/
+profiles/
+.conversion-work/
+*.pdf
+*.caj
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
